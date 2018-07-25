@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvBeaconsDetectedLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/detectedBeaconsLabel"
+        app:layout_constraintEnd_toStartOf="@+id/tvBeaconsDetected"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvBeaconsDetected"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/zero"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvBeaconsDetectedLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvBeaconsDetectedLabel" />
+
+    <TextView
+        android:id="@+id/tvBeaconDistanceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/firstBeaconDistanceLabel"
+        app:layout_constraintEnd_toStartOf="@+id/tvBeaconDistance"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBeaconsDetectedLabel" />
+
+    <TextView
+        android:id="@+id/tvBeaconDistance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/zero"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvBeaconDistanceLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvBeaconDistanceLabel" />
+
+    <TextView
+        android:id="@+id/tvLogs"
+        android:layout_width="0dp"
+        android:layout_height="98dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:lines="4"
+        android:maxLines="4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLogsLabel" />
+
+    <TextView
+        android:id="@+id/tvLogsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/logsLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBeaconDistanceLabel" />
+
+</android.support.constraint.ConstraintLayout>

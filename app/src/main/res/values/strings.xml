@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Beacon test</string>
+    <string name="detectedBeaconsLabel">Beacons Detectados</string>
+    <string name="firstBeaconDistanceLabel">Distancia al primer beacon:</string>
+    <string name="logsLabel">Logs:</string>
+    <string name="zero">0</string>
+</resources>
